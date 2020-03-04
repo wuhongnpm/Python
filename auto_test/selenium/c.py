@@ -1,5 +1,5 @@
 from selenium import webdriver
-browser = webdriver.Chrome(executable_path="..\..\..\zc\chromedrive\chromedriver.exe")
+browser = webdriver.Chrome(executable_path="../../../../../zc/chromedrive/chromedriver.exe")
 browser.get('https://www.douban.com/')
 
 # 引入 ActionChains 类
