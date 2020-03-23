@@ -1,15 +1,3 @@
-#!/usr/bin/env python
-# -*- encoding: utf-8 -*-
-"""
-@File    :   21_file_excel.py
-@Time    :   2019/12/21下午2:46
-@Author  :   Crisimple
-@Github :    https://crisimple.github.io/
-@Contact :   Crisimple@foxmail.com
-@License :   (C)Copyright 2017-2019, Micro-Circle
-@Desc    :   None
-"""
-
 import os
 import sys
 import xlrd
