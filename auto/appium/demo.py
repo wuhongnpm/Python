@@ -1,14 +1,17 @@
 # This sample code uses the Appium python client
 # pip install Appium-Python-Client
 # Then you can paste this into a file and simply run with Python
+#adb shell dumpsys window | findstr mCurrentFocus
+#adb shell getprop ro.product.model
+
 
 from appium import webdriver
 
 caps = {}
-caps["platformName"] = "android"
-caps["deviceName"] = "bluestack"
-caps["appPackage"] = "com.google.android.youtube"
-caps["appActivity"] = "com.google.android.apps.youtube.app.WatchWhileActivity"
+caps["platformName"] = "Android"
+caps["deviceName"] = "CJ-JD-70"
+caps["appPackage"] = "com.ccl.appstore"
+caps["appActivity"] = "com.ccl.appstore.Main2Activity"
 caps["autoGrantPermissions"] = True
 
 driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
