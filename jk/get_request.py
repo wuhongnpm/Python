@@ -3,13 +3,11 @@ import requests
 #设置参数
 param = {"q":"西游记"}
 #多个参数格式：{"key1": "value1", "key2": "value2", "key3": "value3"}
-
 #请求网站豆瓣首页
 r = requests.get("https://www.douban.com/search",params=param)
 
 #打印状态码
 print(r.status_code)
-
 #conten 字节方式的响应体，会自动为你解码 gzip 和deflate 压缩
 print(r.content)
 #headers 以字典对象存储服务器响应头，但是这个字典比较特殊，字典键不区分大小写，若键不存在则返回 None
